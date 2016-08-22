@@ -1,6 +1,6 @@
 # Holds a dictionary where keys are words and values are tuples of the word's 
-# total weight plus a dictionary which contains the word and its associated 
-# probability
+# total weight plus a dictionary which contains any word that comes next and
+# its associated probability.
 class PostModel:
     def __init__(self, prevData = None):
         if prevData is None:
@@ -22,7 +22,7 @@ class PostModel:
         else:
             self.words[fromWord][1][toWord] = 1 # initialize toWord with weight
         
-        # for increased hilarity
+        # incentive chosen phrases for increased hilarity
         for word in self.incentivize:
             if toWord == word:
                 self.words[fromWord][0] += 30
