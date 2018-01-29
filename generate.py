@@ -30,7 +30,7 @@ post = generator.generatePost()
 
 print(post)
 print("\n\nDONE\n")
-if post == "": # error report type deal
+if post == "": # error report type deal for debugging
     print(generator.model["<start>"])
     totalWeight = 0
     for toWord in generator.model["<start>"][1]:
