@@ -1,10 +1,10 @@
 from input import PostModel
 from output import PostGenerator
 
-inputFileNames = ["trump_aipac.txt",
-                  "trump_foreign_policy.txt",
-                  "trump_victory.txt",
-                  "trump_announcement.txt"]
+inputFileNames = ["sample-inputs/trump-aipac.txt",
+                  "sample-inputs/trump-foreign-policy.txt",
+                  "sample-inputs/trump-victory.txt",
+                  "sample-inputs/trump-announcement.txt"]
 inputText = ""
 for name in inputFileNames:
     inputFile = open(name)
